@@ -1,8 +1,15 @@
-const categories = document.querySelectorAll(".item");
+//1. пошук всих елементів за селектором класу .item
+// і виводимо в консоль кількість знайдених категорій
 
-console.log(`Number of categories: ${categories.length}`);
+const categoriesEl = document.querySelectorAll(".item");
+console.dir(categoriesEl);
+console.log(`Number of categories: ${categoriesEl.length}`);
 
-categories.forEach((item) => {
-   console.log(`Category: ${item.firstElementChild.textContent}`);
-   console.log(`Elements: ${item.lastElementChild.children.length}`);
+//2. перебираємо кожний елемент з .item і для кожного
+// виводимо текст з заголовку
+// та кількість "дітей"
+
+categoriesEl.forEach((category) => {
+   console.log(`Category: ${category.firstElementChild.textContent}`);
+   console.log(`Elements: ${category.lastElementChild.children.length}`);
 });
