@@ -7,10 +7,10 @@ const ingredients = [
    "Condiments",
 ];
 
-//створюємо посилання на порожній список, який будемо заповнювати
+//знаходимо елементи
 const ingredientsList = document.querySelector("#ingredients");
 
-//пишемо функцію, яка для окремого інгредієнта створює елемент розмітки
+//функція, яка для окремого інгредієнта створює елемент розмітки
 const makeListItem = (ingredient) => {
    const listItem = document.createElement("li");
    listItem.textContent = ingredient;
