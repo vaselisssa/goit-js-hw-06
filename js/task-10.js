@@ -8,6 +8,7 @@ function getRandomHexColor() {
 const inputAmount = document.querySelector("input");
 const createBtn = document.querySelector("button[data-create]");
 const destroyBtn = document.querySelector("button[data-destroy]");
+const boxes = document.getElementById("boxes");
 
 //функція, що створює в пам'яті введену кількість div та стилізує їх
 function createBoxes(amount) {
